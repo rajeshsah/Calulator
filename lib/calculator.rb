@@ -21,8 +21,8 @@ class Calculator
     @value = @value / input
   end
 
-  def start_calculator
-    gets.chomp
+  def cancel
+    @value = 0
   end
 
 end
