@@ -4,20 +4,8 @@ class Parser
     @calculator = Calculator.new
   end
 
-  def parser user_input_array
-      case user_input_array[0]
-        when "add"
-           @calculator.add(user_input_array[1].to_i)
-         when "subtract"
-           @calculator.subtract(user_input_array[1].to_i)
-        # when "multiply"
-        #   puts @calculator.multiply(user_input_array[1].to_i)
-        # when "divide"
-        #   puts @calculator.divide(user_input_array[1].to_i)
-        # when "cancel"
-        #   puts @calculator.cancel
-      end   
-    
+  def parse user_input
+      user_input.split(" ")
   end
 
   def run 
