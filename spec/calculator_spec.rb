@@ -16,9 +16,11 @@ describe "Calculator" do
   end 
 
   context "Multiply" do
-    it "should return 0 when 5 is multiplied to 0" do
+    it "should return 25 when 1 is added and 5 is multiplied twice" do
       calculator = Calculator.new
-      expect(calculator.multiply(5)).to eq(0)
+      calculator.add(1)
+      calculator.multiply(5)
+      expect(calculator.multiply(5)).to eq(25)
     end
 
     it "should return 25 when 5 is multiplied to 5" do

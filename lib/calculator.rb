@@ -24,5 +24,4 @@ class Calculator
   def cancel
     @value = 0
   end
-
 end

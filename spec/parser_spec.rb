@@ -13,7 +13,6 @@ describe Parser do
       expect(parser.parse("multiply 5")).to eq(expected_array)
     end
   end
-
 end
 
 
