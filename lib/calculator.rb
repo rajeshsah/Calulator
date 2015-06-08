@@ -1,4 +1,4 @@
-#Provides besic math functions for calculation on commandline
+# Performs basic arithmatic operations
 class Calculator
 
   def initialize

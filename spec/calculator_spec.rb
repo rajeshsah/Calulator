@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Calculator" do
+describe Calculator do
   context "Add" do
     it "should return 5 when 5 is added to 0" do
       calculator = Calculator.new

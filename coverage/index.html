@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-08T16:34:02+05:30">2015-06-08T16:34:02+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-08T17:04:55+05:30">2015-06-08T17:04:55+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">72.73%</span></span>
+    (<span class="covered_percent"><span class="red">75.0%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.11
+       <span class="red">
+         0.75
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>2</b> files in total.
-    <b>22</b> relevant lines. 
-    <span class="green"><b>16</b> lines covered</span> and
+    <b>3</b> files in total.
+    <b>24</b> relevant lines. 
+    <span class="green"><b>18</b> lines covered</span> and
     <span class="red"><b>6</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,23 +51,33 @@
     <tbody>
       
       <tr>
+        <td class="strong"><a href="#4ac3c6af039a31ddf6a59d7ada26f774ee2095c4" class="src_link" title="lib/add.rb">lib/add.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>11</td>
+        <td>6</td>
+        <td>6</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#cc4b32dbe74fff9711760b16f0569ad75140abf7" class="src_link" title="lib/calculator.rb">lib/calculator.rb</a></td>
-        <td class="green strong">92.31 %</td>
+        <td class="red strong">69.23 %</td>
         <td>27</td>
         <td>13</td>
-        <td>12</td>
-        <td>1</td>
-        <td>1.6</td>
+        <td>9</td>
+        <td>4</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#f16949e8186bce4a565b36897101c78c72030c0e" class="src_link" title="lib/parser.rb">lib/parser.rb</a></td>
-        <td class="red strong">44.44 %</td>
-        <td>18</td>
-        <td>9</td>
-        <td>4</td>
+        <td class="red strong">60.0 %</td>
+        <td>19</td>
         <td>5</td>
-        <td>0.4</td>
+        <td>3</td>
+        <td>2</td>
+        <td>0.6</td>
       </tr>
       
     </tbody>
@@ -86,14 +96,14 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="cc4b32dbe74fff9711760b16f0569ad75140abf7">
+        <div class="source_table" id="4ac3c6af039a31ddf6a59d7ada26f774ee2095c4">
   <div class="header">
-    <h3>lib/calculator.rb</h3>
-    <h4><span class="green">92.31 %</span> covered</h4>
+    <h3>lib/add.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>13</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -103,7 +113,91 @@
         <li class="never" data-hits="" data-linenumber="1">
           
           
-          <code class="ruby">#Provides besic math functions for calculation on commandline</code>
+          <code class="ruby"># executes add operation for calculator-operand</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Add</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(calculator,operand)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @calculator = calculator</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @operand = operand</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def execute</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @calculator.add(@operand)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="cc4b32dbe74fff9711760b16f0569ad75140abf7">
+  <div class="header">
+    <h3>lib/calculator.rb</h3>
+    <h4><span class="red">69.23 %</span> covered</h4>
+    <div>
+      <b>13</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># Performs basic arithmatic operations</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
@@ -124,8 +218,8 @@
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="5">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">    @value = 0</code>
         </li>
@@ -148,8 +242,8 @@
           <code class="ruby">  def add(input)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="9">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
           
           <code class="ruby">   @value = @value + input</code>
         </li>
@@ -172,8 +266,8 @@
           <code class="ruby">  def subtract(input)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
           
           <code class="ruby">    @value = @value - input</code>
         </li>
@@ -196,8 +290,8 @@
           <code class="ruby">  def multiply(input)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="17">
-          <span class="hits">3</span>
+        <li class="missed" data-hits="0" data-linenumber="17">
+          
           
           <code class="ruby">    @value = @value * input</code>
         </li>
@@ -220,8 +314,8 @@
           <code class="ruby">  def divide(input)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
           
           <code class="ruby">    @value = @value / input</code>
         </li>
@@ -269,11 +363,11 @@
         <div class="source_table" id="f16949e8186bce4a565b36897101c78c72030c0e">
   <div class="header">
     <h3>lib/parser.rb</h3>
-    <h4><span class="red">44.44 %</span> covered</h4>
+    <h4><span class="red">60.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -283,7 +377,7 @@
         <li class="never" data-hits="" data-linenumber="1">
           
           
-          <code class="ruby">#read user input and breaks it to particular function</code>
+          <code class="ruby"># converts input string to tokens</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
@@ -337,55 +431,61 @@
         <li class="never" data-hits="" data-linenumber="10">
           
           
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="12">
           
-          <code class="ruby">  def run </code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">    while (user_input = gets.chomp) != &quot;exit&quot;</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">      user_input_array = user_input.split(&quot; &quot;)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
-          
-          <code class="ruby">      puts parser(user_input_array)</code>
+          <code class="ruby">  # def run </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  #   while (user_input = gets.chomp) != &quot;exit&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  #     user_input_array = user_input.split(&quot; &quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby">  #     puts parser(user_input_array)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">  #   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  # end</code>
         </li>
       
     </ol>
