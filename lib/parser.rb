@@ -4,8 +4,12 @@ class Parser
     @calculator = Calculator.new
   end
 
-  def parse user_input
-      user_input.split(" ")
+  def parse(user_input)
+    user_input_array = user_input.split(" ")
+    case user_input_array[0]
+    when "add"
+      Add.new(@calculator,user_input_array[1].to_i)
+    end
   end
 end
 
