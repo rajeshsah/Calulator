@@ -8,8 +8,8 @@ class Parser
       case user_input_array[0]
         when "add"
            @calculator.add(user_input_array[1].to_i)
-        # when "subtract"
-        #   puts @calculator.subtract(user_input_array[1].to_i)
+         when "subtract"
+           @calculator.subtract(user_input_array[1].to_i)
         # when "multiply"
         #   puts @calculator.multiply(user_input_array[1].to_i)
         # when "divide"
