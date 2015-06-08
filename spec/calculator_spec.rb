@@ -36,32 +36,4 @@ describe "Calculator" do
     end
   end
 
-  # context "start_calculator" do
-  #   it "should return add 5 when input: is add 5" do
-  #     allow_any_instance_of(Calculator).to receive(:gets).and_return("add 5")
-  #     calculator = Calculator.new
-  #     expect(calculator.start_calculator).to eq(5)
-  #   end
-
-  #   # it "should return subtract 5 when input: is subtract 5" do
-  #   #   allow_any_instance_of(Calculator).to receive(:gets).and_return("subtract 5")
-  #   #   calculator = Calculator.new
-  #   #   expect(calculator.start_calculator).to eq("subtract 5")
-  #   # end
-
-  #   # it "should return multiply 5 when input: is multiply 5" do
-  #   #   allow_any_instance_of(Calculator).to receive(:gets).and_return("multiply 5")
-  #   #   calculator = Calculator.new
-  #   #   expect(calculator.start_calculator).to eq("multiply 5")
-  #   # end
-
-  #   # it "should return divide 5 when input: is divide 5" do
-  #   #   allow_any_instance_of(Calculator).to receive(:gets).and_return("divide 5")
-  #   #   calculator = Calculator.new
-  #   #   expect(calculator.start_calculator).to eq("divide 5")
-  #   # end
-
-  # end
-
-
 end
