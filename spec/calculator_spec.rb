@@ -38,4 +38,11 @@ describe Calculator do
     end
   end
 
+  context "Square Root" do
+    it "should return 5 when initial value is 25 and sqrt is called" do
+      calculator = Calculator.new
+      calculator.add(25)
+      expect(calculator.square_root).to eq(5)
+    end
+  end
 end

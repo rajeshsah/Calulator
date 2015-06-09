@@ -15,6 +15,8 @@ class Parser
       return MultiplyCommand.new(@calculator,user_input_array[1].to_f)
     when "divide"
       return DivisionCommand.new(@calculator,user_input_array[1].to_f)
+    when "sqrt"
+      return SquareRootCommand.new(@calculator)
     when "cancel"
       return CancelCommand.new(@calculator,user_input_array[1].to_f)
     when "exit"
