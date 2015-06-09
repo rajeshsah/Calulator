@@ -17,8 +17,10 @@ class Parser
       return DivisionCommand.new(@calculator,user_input_array[1].to_f)
     when "cancel"
       return CancelCommand.new(@calculator,user_input_array[1].to_f)
+    when "exit"
+      return ExitCommand.new
     else
-      raise "invalid operations"
+      return InvalidCommand.new
     end
   end
 end

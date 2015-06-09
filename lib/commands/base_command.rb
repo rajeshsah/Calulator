@@ -1,6 +1,6 @@
 #initialze commands
 class BaseCommand
-  def initialize(calculator,operand = 0)
+  def initialize(calculator = nil,operand = 0)
     @calculator = calculator
     @operand = operand
   end
