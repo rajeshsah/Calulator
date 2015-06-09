@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-require_relative '../lib/parser.rb'
-require_relative '../lib/calculator.rb'
-parser = Parser.new()
-parser.run
+require_relative '../lib/calc'
+calculator_manager = CalculatorManager.new
+calculator_manager.process_request

@@ -1,11 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/rajeshsah/tutorial/calulator/lib/commands.rb": [
-        1,
-        1,
-        1,
-        1,
+      "/Users/rajeshsah/tutorial/calulator/lib/calc.rb": [
         1,
         1,
         1,
@@ -81,26 +77,36 @@
         null,
         null
       ],
+      "/Users/rajeshsah/tutorial/calulator/lib/commands.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "/Users/rajeshsah/tutorial/calulator/lib/commands/base_command.rb": [
+        null,
+        1,
+        1,
+        11,
+        11,
+        null,
+        null
+      ],
       "/Users/rajeshsah/tutorial/calulator/lib/commands/add_command.rb": [
         null,
         1,
-        1,
-        5,
-        5,
-        null,
         null,
         1,
         4,
+        null,
         null,
         null
       ],
       "/Users/rajeshsah/tutorial/calulator/lib/commands/subtract_command.rb": [
         null,
         1,
-        1,
-        2,
-        2,
-        null,
         null,
         1,
         2,
@@ -110,10 +116,6 @@
       "/Users/rajeshsah/tutorial/calulator/lib/commands/multiply_command.rb": [
         null,
         1,
-        1,
-        1,
-        1,
-        null,
         null,
         1,
         1,
@@ -123,10 +125,6 @@
       "/Users/rajeshsah/tutorial/calulator/lib/commands/division_command.rb": [
         null,
         1,
-        1,
-        1,
-        1,
-        null,
         null,
         1,
         1,
@@ -136,10 +134,6 @@
       "/Users/rajeshsah/tutorial/calulator/lib/commands/cancel_command.rb": [
         null,
         1,
-        1,
-        2,
-        null,
-        null,
         1,
         2,
         null,
@@ -274,6 +268,6 @@
         null
       ]
     },
-    "timestamp": 1433828434
+    "timestamp": 1433829500
   }
 }

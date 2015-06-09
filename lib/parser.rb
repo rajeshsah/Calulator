@@ -1,16 +1,24 @@
 # converts input string to tokens
 class Parser
-  def initialize
-    @calculator = Calculator.new
+  def initialize(calculator)
+    @calculator = calculator
   end
 
   def parse(user_input)
     user_input_array = user_input.split(" ")
     case user_input_array[0]
     when "add"
-      return AddCommand.new(@calculator,user_input_array[1].to_i)
+      return AddCommand.new(@calculator,user_input_array[1].to_f)
     when "subtract"
-      return SubtractCommand.new(@calculator,user_input_array[1].to_i)
+      return SubtractCommand.new(@calculator,user_input_array[1].to_f)
+    when "multiply"
+      return MultiplyCommand.new(@calculator,user_input_array[1].to_f)
+    when "divide"
+      return DivisionCommand.new(@calculator,user_input_array[1].to_f)
+    when "cancel"
+      return CancelCommand.new(@calculator,user_input_array[1].to_f)
+    else
+      raise "invalid operations"
     end
   end
 end

@@ -1,3 +1,3 @@
 require 'simplecov'
 SimpleCov.start
-require_relative '../lib/commands.rb'
+require_relative '../lib/calc'
