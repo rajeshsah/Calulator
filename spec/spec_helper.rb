@@ -1,10 +1,3 @@
 require 'simplecov'
 SimpleCov.start
-require_relative '../lib/calculator.rb'
-require_relative '../lib/parser.rb'
-require_relative '../lib/add_command.rb'
-require_relative '../lib/calculator_manager.rb'
-require_relative '../lib/subtract_command.rb'
-require_relative '../lib/multiply_command.rb'
-require_relative '../lib/division_command.rb'
-require_relative '../lib/cancel_command.rb'
+require_relative '../lib/commands.rb'
