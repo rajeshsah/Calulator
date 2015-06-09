@@ -8,9 +8,9 @@ class Parser
     user_input_array = user_input.split(" ")
     case user_input_array[0]
     when "add"
-      return Add.new(@calculator,user_input_array[1].to_i)
+      return AddCommand.new(@calculator,user_input_array[1].to_i)
     when "subtract"
-      return Subtract.new(@calculator,user_input_array[1].to_i)
+      return SubtractCommand.new(@calculator,user_input_array[1].to_i)
     end
   end
 end
