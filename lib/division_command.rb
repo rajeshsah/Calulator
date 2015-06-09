@@ -6,6 +6,6 @@ class DivisionCommand
   end
 
   def execute
-    @calculator.division(@operand)
+    @calculator.divide(@operand)
   end
 end
