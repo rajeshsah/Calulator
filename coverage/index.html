@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-09T10:45:22+05:30">2015-06-09T10:45:22+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-09T10:50:49+05:30">2015-06-09T10:50:49+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">62.71%</span></span>
+    (<span class="covered_percent"><span class="red">62.07%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.64
+         0.69
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>8</b> files in total.
-    <b>59</b> relevant lines. 
-    <span class="green"><b>37</b> lines covered</span> and
+    <b>58</b> relevant lines. 
+    <span class="green"><b>36</b> lines covered</span> and
     <span class="red"><b>22</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -67,7 +67,7 @@
         <td>13</td>
         <td>10</td>
         <td>3</td>
-        <td>0.8</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
@@ -82,22 +82,22 @@
       
       <tr>
         <td class="strong"><a href="#52c58ba7af39147e3a36271d7948dbcb90e07802" class="src_link" title="lib/cancel_command.rb">lib/cancel_command.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>1.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#854a52392de70a29cc59cfbf7a9bb3804190b136" class="src_link" title="lib/division_command.rb">lib/division_command.rb</a></td>
         <td class="red strong">50.0 %</td>
         <td>11</td>
         <td>6</td>
         <td>3</td>
         <td>3</td>
         <td>0.5</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#854a52392de70a29cc59cfbf7a9bb3804190b136" class="src_link" title="lib/division_command.rb">lib/division_command.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>11</td>
-        <td>6</td>
-        <td>6</td>
-        <td>0</td>
-        <td>1.0</td>
       </tr>
       
       <tr>
@@ -268,8 +268,8 @@
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
           
           <code class="ruby">    @value = 0</code>
         </li>
@@ -364,8 +364,8 @@
           <code class="ruby">  def divide(input)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
           
           <code class="ruby">    @value = @value / input</code>
         </li>
@@ -388,8 +388,8 @@
           <code class="ruby">  def cancel</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="25">
-          
+        <li class="covered" data-hits="2" data-linenumber="25">
+          <span class="hits">2</span>
           
           <code class="ruby">    @value = 0</code>
         </li>
@@ -503,11 +503,11 @@
         <div class="source_table" id="52c58ba7af39147e3a36271d7948dbcb90e07802">
   <div class="header">
     <h3>lib/cancel_command.rb</h3>
-    <h4><span class="red">50.0 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>3</b> lines missed.</span>
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -524,6 +524,84 @@
           <span class="hits">1</span>
           
           <code class="ruby">class CancelCommand</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize(calculator)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @calculator = calculator</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def execute</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @calculator.cancel()</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="854a52392de70a29cc59cfbf7a9bb3804190b136">
+  <div class="header">
+    <h3>lib/division_command.rb</h3>
+    <h4><span class="red">50.0 %</span> covered</h4>
+    <div>
+      <b>6</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="never" data-hits="" data-linenumber="1">
+          
+          
+          <code class="ruby"># executes division operation for calculator-operand</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class DivisionCommand</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -564,90 +642,6 @@
       
         <li class="missed" data-hits="0" data-linenumber="9">
           
-          
-          <code class="ruby">    @calculator.cancel()</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-      
-        <div class="source_table" id="854a52392de70a29cc59cfbf7a9bb3804190b136">
-  <div class="header">
-    <h3>lib/division_command.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="never" data-hits="" data-linenumber="1">
-          
-          
-          <code class="ruby"># executes division operation for calculator-operand</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class DivisionCommand</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def initialize(calculator,operand)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @calculator = calculator</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @operand = operand</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def execute</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
           
           <code class="ruby">    @calculator.divide(@operand)</code>
         </li>
