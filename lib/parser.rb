@@ -1,6 +1,6 @@
 # converts input string to tokens
 class Parser
-  def initialize(calculator, command_history)
+  def initialize(calculator)
     @calculator = calculator
   end
 

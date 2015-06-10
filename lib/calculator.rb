@@ -38,6 +38,14 @@ class Calculator
     @value = - (@value)
   end
 
+  def get_command_history
+    @command_history
+  end
+
+  def get_value
+    @value
+  end
+
   def add_command_to_command_history(command)
     @command_history.add_command(command)
   end
