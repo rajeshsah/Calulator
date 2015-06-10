@@ -45,4 +45,20 @@ describe Calculator do
       expect(calculator.square_root).to eq(5)
     end
   end
+
+  context "Square" do
+    it "should return 25 when initial value is 5 and sqrt is called" do
+      calculator = Calculator.new
+      calculator.add(5)
+      expect(calculator.square).to eq(25)
+    end
+  end
+
+  context "Negative" do
+    it "should return -25 when initial value is 25 and is called" do
+      calculator = Calculator.new
+      calculator.add(5)
+      expect(calculator.square).to eq(25)
+    end
+  end
 end

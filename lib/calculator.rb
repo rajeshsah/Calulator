@@ -25,7 +25,15 @@ class Calculator
     @value = Math.sqrt(@value)
   end
 
+  def square
+    @value = @value * @value
+  end
+
   def cancel
     @value = 0
+  end
+
+  def negative
+    @value = - (@value)
   end
 end
