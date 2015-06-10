@@ -70,4 +70,22 @@ describe Calculator do
       expect(command_histroy.length).to eq(1)
     end
   end
+
+  context "get value" do
+    it "should 5 if its value is 5" do
+      calculator = Calculator.new
+      add = calculator.add(5)
+      expect(calculator.get_value).to eq(5)
+    end
+  end
+
+  context "get command history" do
+    it "should return command history of history object" do
+      calculator = Calculator.new
+      add = AddCommand.new(calculator, 1)
+      command_histroy = calculator.add_command_to_command_history(add)
+      expect(command_histroy.length).to eq(1)
+    end
+  end
+
 end
