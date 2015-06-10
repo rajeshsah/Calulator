@@ -1,7 +1,7 @@
 # executes add operation for calculator-operand
 class AddCommand < BaseCommand
   
-  def execute
+  def execute()
     @calculator.add(@operand)
   end
 

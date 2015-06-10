@@ -3,6 +3,7 @@ class Calculator
 
   def initialize
     @value = 0
+    @command_history = CommandHistroy.new
   end
 
   def add(input)
@@ -36,4 +37,9 @@ class Calculator
   def negative
     @value = - (@value)
   end
+
+  def add_command_to_command_history(command)
+    @command_history.add_command(command)
+  end
+
 end

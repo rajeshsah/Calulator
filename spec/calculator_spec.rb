@@ -61,4 +61,13 @@ describe Calculator do
       expect(calculator.square).to eq(25)
     end
   end
+
+  context "add command to command" do
+    it "should return 1 when one command is added" do
+      calculator = Calculator.new
+      add = AddCommand.new(calculator, 1)
+      command_histroy = calculator.add_command_to_command_history(add)
+      expect(command_histroy.length).to eq(1)
+    end
+  end
 end

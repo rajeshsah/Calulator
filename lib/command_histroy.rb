@@ -7,4 +7,9 @@ class CommandHistroy
   def get_previous_command(count)
     @previous_commands.last(count)
   end
+
+  def add_command(command)
+    @previous_commands << command
+  end
+
 end
