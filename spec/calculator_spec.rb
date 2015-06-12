@@ -75,7 +75,7 @@ describe Calculator do
     it "should 5 if its value is 5" do
       calculator = Calculator.new
       add = calculator.add(5)
-      expect(calculator.get_value).to eq(5)
+      expect(calculator.value).to eq(5)
     end
   end
 
