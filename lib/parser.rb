@@ -26,6 +26,10 @@ class Parser
         return CancelCommand.new(@calculator,user_input_array[1].to_f)
       when "exit"
         return ExitCommand.new
+      when "negate"
+        return NegateCommand.new(@calculator)
+      when "abs"
+        return AbsCommand.new(@calculator)
       else
         return InvalidCommand.new("Invalid command")
       end

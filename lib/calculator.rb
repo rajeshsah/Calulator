@@ -38,6 +38,9 @@ class Calculator
     @value = - (@value)
   end
 
+  def absolute
+    @value.abs
+  end
   def get_command_history
     @command_history
   end

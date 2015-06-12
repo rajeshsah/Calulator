@@ -1,10 +1,7 @@
 # executes negate operation for calculator-operand
 class NegateCommand < BaseCommand
   
-  def initialize(calculator, *args)
-    if args.length != 0
-      raise ArgumentError
-    end
+  def initialize(calculator)
     @calculator = calculator
   end
   
