@@ -6,7 +6,7 @@ class RepeatCommand < BaseCommand
     previous_command.each do |command|
       command.execute
     end
-    @calculator.get_value
+    @calculator.value
   end
 
 end

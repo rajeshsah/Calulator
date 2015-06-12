@@ -1,6 +1,6 @@
 # Performs basic arithmatic operations
 class Calculator
-
+  attr_reader :value
   def initialize
     @value = 0
     @command_history = CommandHistroy.new
@@ -40,10 +40,6 @@ class Calculator
 
   def get_command_history
     @command_history
-  end
-
-  def get_value
-    @value
   end
 
   def add_command_to_command_history(command)

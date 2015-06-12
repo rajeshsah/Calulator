@@ -12,6 +12,4 @@ describe RepeatCommand do
     expect(repeatCommand.execute).to eq(6)
   end
 
-
-
 end
